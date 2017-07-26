@@ -1,12 +1,9 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
 
-  get 'static_pages/electric'
-
-  get 'static_pages/acoustic'
-
-  get 'static_pages/classical'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'application#hello'
+  root 'static_pages#home'
+  get  '/electric', to: 'static_pages#electric'
+  get  '/acoustic', to: 'static_pages#acoustic'
+  get  '/classical',to: 'static_pages#classical'
 end
