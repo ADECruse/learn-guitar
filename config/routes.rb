@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get  '/acoustic', to: 'static_pages#acoustic'
   get  '/classical',to: 'static_pages#classical'
   get  '/signup',  to: 'users#new'
+  resources :users
 end
