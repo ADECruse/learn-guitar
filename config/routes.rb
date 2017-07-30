@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get  '/electric', to: 'static_pages#electric'
   get  '/acoustic', to: 'static_pages#acoustic'
   get  '/classical',to: 'static_pages#classical'
+  get  '/about',    to: 'static_pages#about'
   get  '/signup',  to: 'users#new'
   resources :users
   get    '/login',   to: 'sessions#new'
