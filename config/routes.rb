@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#home'
   get  '/electric', to: 'static_pages#electric'
@@ -6,4 +8,7 @@ Rails.application.routes.draw do
   get  '/classical',to: 'static_pages#classical'
   get  '/signup',  to: 'users#new'
   resources :users
+  get    '/login',   to: 'sessions#new'
+  post   '/login',   to: 'sessions#create'
+  delete '/logout',  to: 'sessions#destroy'
 end
