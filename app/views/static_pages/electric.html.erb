@@ -1,6 +1,13 @@
-<% provide(:title, "Electric") %>
+<% provide(:title, "Parts of the Guitar") %>
+<div class="container">
+<div class="embed-responsive embed-responsive-16by9">
+<%= cl_video_tag("parts_of_the_guitar_jxofmd", controls: true, width: 640, height: 360) %>
+</div>
 <div>
-  <h1>Electric Guitar</h1>
-  <p>The most iconic instrument of contemporary music. From Jazz to Metal, Pop to Reggae. Electric guitar brings a wealth of techniques and repertoire to get stuck into. Want to play with the sweet and delicate touch of BB King? Or with the speed and dexterity of Joe Satriani? Then the electric guitar is for you.</p>
-  <p>Sign up today today and get access to help videos and PDF downloads with your private one-two-one lesson.</p>
+  <h2>Parts of the Guitar</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <!-- <p>The most iconic instrument of contemporary music. From Jazz to Metal, Pop to Reggae. Electric guitar brings a wealth of techniques and repertoire to get stuck into. Want to play with the sweet and delicate touch of BB King? Or with the speed and dexterity of Joe Satriani? Then the electric guitar is for you.</p>
+  <p>Sign up today today and get access to help videos and PDF downloads with your private one-two-one lesson.</p> -->
+</div>
+<%= link_to "BACK TO VIDEOS", videos_path, class: "btn btn-lg signup" %>
 </div>

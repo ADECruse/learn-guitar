@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get  '/classical',to: 'static_pages#classical'
   get  '/about',    to: 'static_pages#about'
   get  '/packages', to: 'static_pages#packages'
+  get  '/videos', to: 'static_pages#videos'
   get  '/signup',   to: 'users#new'
   resources :users
   get    '/login',   to: 'sessions#new'
