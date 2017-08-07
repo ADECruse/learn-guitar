@@ -21,6 +21,8 @@
    -webkit-box-sizing: border-box;
    box-sizing:         border-box;
  }
+ // variables
+ $main-colour: #68c4af;
 
  .vid:hover {
      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
@@ -176,7 +178,7 @@
        color: #fff !important;
    }
    .navbar-nav li a:hover, .navbar-nav li.active a {
-       color: #68c4af !important;
+       color: $main-colour !important;
        background-color: #fff !important;
    }
    .navbar-default .navbar-toggle {
